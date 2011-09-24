@@ -1,0 +1,14 @@
+1 create a string from const ".."
+2 append 2 strings
+3 length of string
+4 create a substring from a string
+5 find a substring return index
+6 replace a substring with other
+7 split string into array of strings
+8 reverse a string
+9 convert to upper case
+10 convert to lower case 
+11 compare 2 strings
+12 regular experession
+13 strip \s from start and end
+14 convert number to string
