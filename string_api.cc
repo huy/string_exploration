@@ -6,20 +6,6 @@
 using namespace std;
 using namespace boost;
 
-string replace_all(string s, const char* one, const char* other){
-	int pos=0;
-	while(1){
-		pos = s.find(one,pos);
-		if( pos != string::npos){
-			s.replace(pos,strlen(one),other);
-			pos = pos + strlen(other);
-		}	
-		else
-			break;
-	}
-	return s;
-}
-
 template <class T>
 void print_list(const T& lst){
 	typename T::const_iterator it;
@@ -52,8 +38,11 @@ int main(int argc,char** argv){
 	cout << "--- position of 'hello' in '" << s2 << "'=" << s2.find(string("hello")) << "\n";
 	cout << "--- replace 'world' by 'moon' in '" << s2 << "'=" << 
 		s2.replace(s2.find("world"),strlen("world"),"moon") << "\n";
-	cout << "--- replace 'l' by '?' in '" << s2 << "'=" << 
-		replace_all(s2,"l","?") << "\n";
+
+	cout << "--- replace 'l' by '?' in '" << s1 << "'=";
+	boost::replace_all(s1,"l","?");
+        cout <<	s1  << "'\n";
+
 	cout << "--- split '" << s2 << "' by space" << "\n";
 	vector<string> lst;
 	boost::split(lst, s2, boost::is_any_of(" "), boost::token_compress_on);
