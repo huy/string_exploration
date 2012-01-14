@@ -46,17 +46,6 @@ void print_list(const T& lst){
 	cout << "]" << "\n";
 }
 
-string reverse(string s) {
-	int size = s.size();
-	char* rarr = new char[size+1];
-	rarr[size] = '\0';	
-	const char* larr = s.c_str();
-	for(int i=0; i < size; i++){
-		rarr[size-i-1] = larr[i];		
-	}
-	return string(rarr);
-}
-
 int main(int argc,char** argv){
         cout << "--- create string from const\n";
 	string s1("hello");
@@ -82,7 +71,9 @@ int main(int argc,char** argv){
 	cout << "--- split '" << s2 << "' by space" << "\n";
 	list<string> lst = split(s2," ");
 	print_list(lst);
-	cout << "--- reverse of '" << s2 << "'=" << reverse(s2) << "\n";
+	cout << "--- reverse of '" << s2 << "'=";
+	reverse(s2.begin(),s2.end());
+        cout << s2 << "'\n";
 
 }
 

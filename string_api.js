@@ -9,7 +9,7 @@ console.log("split '" + s + "' by space is " + s.split(" "));
 
 String.prototype.reverse = function() {
     var s="";
-    for (i=this.length-1; i>=0; s+=this[i], --i);
+    for (i=this.length-1; i>=0; --i) s=s.concat(this[i]);
     return s;
 }
 
