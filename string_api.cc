@@ -1,8 +1,10 @@
 #include <string>
 #include <iostream>
 #include <vector>
+#include <boost/algorithm/string.hpp>
 
 using namespace std;
+using namespace boost;
 
 string replace_all(string s, const char* one, const char* other){
 	int pos=0;
@@ -16,22 +18,6 @@ string replace_all(string s, const char* one, const char* other){
 			break;
 	}
 	return s;
-}
-
-vector<string> split(string s,const char* separator) {
-	vector<string> result;
-	int prev_pos=0;
-	while(1){
-		int pos = s.find(separator,prev_pos);
-		if( pos != string::npos ){
-			result.push_back(s.substr(prev_pos,pos-prev_pos));
-			prev_pos=pos+strlen(separator);
-		}else {
-			result.push_back(s.substr(prev_pos,s.size()-prev_pos));
-			break;
-		}	
-	}
-	return result;
 }
 
 template <class T>
@@ -69,11 +55,12 @@ int main(int argc,char** argv){
 	cout << "--- replace 'l' by '?' in '" << s2 << "'=" << 
 		replace_all(s2,"l","?") << "\n";
 	cout << "--- split '" << s2 << "' by space" << "\n";
-	vector<string> lst = split(s2," ");
+	vector<string> lst;
+	boost::split(lst, s2, boost::is_any_of(" "), boost::token_compress_on);
+
 	print_list(lst);
 	cout << "--- reverse of '" << s2 << "'=";
 	reverse(s2.begin(),s2.end());
         cout << s2 << "'\n";
-
 }
 
