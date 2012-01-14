@@ -7,4 +7,4 @@ puts "--- replace world by moon in #{s}=#{s.sub("world","moon")}"
 puts "--- replace l by ? in #{s}=#{s.gsub("l","?")}"
 puts "--- split  #{s} by space ="
 puts s.split(" ").inspect
-puts "--- revser of  #{s}=#{s.reverse}"
+puts "--- reverse of  #{s}=#{s.reverse}"

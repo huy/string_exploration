@@ -1,29 +1,12 @@
-print "---creat a string from const"
-
-s1 = "hello"
-print s1
-s1 = 'world'
-print s1
-s1 = '''
-hello
-world
-'''
-print s1
-
-print "---append 2 strings"
-s2 = "hello"
-s2 = s2 + " world"
-print s2
-
-print "---length of '"+s2+"' is "+str(len(s2))
-
-print "---first 5 characters of '"+s2 + "' is '" + s2[0:5] + "'"
-print "---last 5 characters of '"+s2 + "' is '" + s2[-5:] + "'"
-print "---position of 'world' in '"+s2 + "' is " + str(s2.index("world"))
-print "---replace 'world' by 'moon' in '"+s2 + "' is " + s2.replace("world","moon",1)
-print "---replace all 'l' by '?' in '"+s2 + "' is " + s2.replace("l","?")
-print "---split '"+s2 + "' by space is ",s2.split(" ")
-print "---reverse of '"+s2 + "' is ",s2[::-1]
+s = 'hello' + ' world'
+print "---length of '"+s+"' is "+str(len(s))
+print "---first 5 characters of '"+s + "' is '" + s[0:5] + "'"
+print "---last 5 characters of '"+s + "' is '" + s[-5:] + "'"
+print "---position of 'world' in '"+s + "' is " + str(s.index("world"))
+print "---replace 'world' by 'moon' in '"+s + "' is " + s.replace("world","moon",1)
+print "---replace all 'l' by '?' in '"+s + "' is " + s.replace("l","?")
+print "---split '"+s + "' by space is ",s.split(" ")
+print "---reverse of '"+s + "' is ",s[::-1]
 
 
 
