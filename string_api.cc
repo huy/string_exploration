@@ -1,6 +1,6 @@
 #include <string>
 #include <iostream>
-#include <list>
+#include <vector>
 
 using namespace std;
 
@@ -18,8 +18,8 @@ string replace_all(string s, const char* one, const char* other){
 	return s;
 }
 
-list<string> split(string s,const char* separator) {
-	list<string> result;
+vector<string> split(string s,const char* separator) {
+	vector<string> result;
 	int prev_pos=0;
 	while(1){
 		int pos = s.find(separator,prev_pos);
@@ -69,7 +69,7 @@ int main(int argc,char** argv){
 	cout << "--- replace 'l' by '?' in '" << s2 << "'=" << 
 		replace_all(s2,"l","?") << "\n";
 	cout << "--- split '" << s2 << "' by space" << "\n";
-	list<string> lst = split(s2," ");
+	vector<string> lst = split(s2," ");
 	print_list(lst);
 	cout << "--- reverse of '" << s2 << "'=";
 	reverse(s2.begin(),s2.end());
