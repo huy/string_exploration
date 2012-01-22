@@ -1,4 +1,4 @@
-s = "hello" + " world";
+s = "Hello" + " World";
 console.log("length of " + s + " is " + s.length);
 console.log("first five characters of  '" + s + "' is '" + s.substring(0,5) + "'");
 console.log("last five characters of  '" + s + "' is '" + s.substring(s.length-5,s.length) + "'");
@@ -14,3 +14,5 @@ String.prototype.reverse = function() {
 }
 
 console.log("reverse of '" + s + "' is " + s.reverse());
+console.log("uppercase of '" + s + "' is " + s.toUpperCase());
+console.log("lowercase of '" + s + "' is " + s.toLowerCase());

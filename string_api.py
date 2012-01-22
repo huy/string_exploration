@@ -7,6 +7,9 @@ print "---replace 'world' by 'moon' in '"+s + "' is " + s.replace("world","moon"
 print "---replace all 'l' by '?' in '"+s + "' is " + s.replace("l","?")
 print "---split '"+s + "' by space is ",s.split(" ")
 print "---reverse of '"+s + "' is ",s[::-1]
+print "---uppercase of '"+s + "' is ",s.upper()
+s1 = "Hello World"
+print "---lowercase of '"+s1 + "' is ",s1.lower()
 
 
 

@@ -8,3 +8,5 @@ puts "--- replace l by ? in #{s}=#{s.gsub("l","?")}"
 puts "--- split  #{s} by space ="
 puts s.split(" ").inspect
 puts "--- reverse of  #{s}=#{s.reverse}"
+puts "--- uppercase of  #{s}=#{s.upcase}"
+puts "--- lowercase of  #{s}=#{s.downcase}"

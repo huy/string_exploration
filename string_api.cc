@@ -25,8 +25,8 @@ int main(int argc,char** argv){
 	s1 = string("hello world");
         cout << s1 << "\n";
         cout << "--- append 2 strings \n";
-	string s2("hello"); 
-	s2 = s2 + string(" world");
+	string s2("Hello"); 
+	s2 = s2 + string(" World");
  	cout << s2 << "\n";
 	s2 = string("hello");
 	s2+=string(" world");
@@ -51,5 +51,11 @@ int main(int argc,char** argv){
 	cout << "--- reverse of '" << s2 << "'=";
 	reverse(s2.begin(),s2.end());
         cout << s2 << "'\n";
+
+	string s3 = "Hello World";
+        cout << "uppercase of '" << s3 << "' is '" << boost::to_upper_copy(s3) << "'\n";
+
+        cout << "lowercase of '" << s3 << "' is '" << boost::to_lower_copy(s3) << "'\n";
+
 }
 
