@@ -10,3 +10,7 @@ puts s.split(" ").inspect
 puts "--- reverse of  #{s}=#{s.reverse}"
 puts "--- uppercase of  #{s}=#{s.upcase}"
 puts "--- lowercase of  #{s}=#{s.downcase}"
+s1 = 'hello world'
+puts "--- compare #{s} with #{s1} returns #{s == s1}"
+s2 = 'hello World'
+puts "--- compare #{s} with #{s2} returns #{s == s2}"

@@ -10,6 +10,9 @@ print "---reverse of '"+s + "' is ",s[::-1]
 print "---uppercase of '"+s + "' is ",s.upper()
 s1 = "Hello World"
 print "---lowercase of '"+s1 + "' is ",s1.lower()
+s2 = "hello world"
+print "---compare '"+s + "' with '" + s2 + "' returns ", s==s2
+print "---compare '"+s + "' with '" + s1 + "' returns ", s==s1
 
 
 

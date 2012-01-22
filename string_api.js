@@ -16,3 +16,7 @@ String.prototype.reverse = function() {
 console.log("reverse of '" + s + "' is " + s.reverse());
 console.log("uppercase of '" + s + "' is " + s.toUpperCase());
 console.log("lowercase of '" + s + "' is " + s.toLowerCase());
+s1 = "Hello World"
+console.log("compare '" + s + "' with '" + s1 + "' returns " + (s===s1) );
+s2 = "hello World"
+console.log("compare '" + s + "' with '" + s2 + "' returns " + (s===s2) );

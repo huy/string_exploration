@@ -25,5 +25,9 @@ public class StringApi {
         	new String(new StringBuffer(s3).reverse()));
         out.println("--- uppercase of '" + s3 + "'+ is '" + s3.toUpperCase() + "'");
         out.println("--- lowercase of '" + s3 + "'+ is '" + s3.toLowerCase() + "'");
+        String s = "Hello World";
+        out.println("--- compare '" + s3 + "'+ with '" + s + "' returns " + (s3.equals(s)) );
+        String s1 = "hello World";
+        out.println("--- compare '" + s3 + "'+ with '" + s1 + "' returns " + (s1.equals(s)) );
     }
 }

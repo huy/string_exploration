@@ -54,8 +54,12 @@ int main(int argc,char** argv){
 
 	string s3 = "Hello World";
         cout << "uppercase of '" << s3 << "' is '" << boost::to_upper_copy(s3) << "'\n";
-
         cout << "lowercase of '" << s3 << "' is '" << boost::to_lower_copy(s3) << "'\n";
+       
+        string s4 = string("Hello") + string(" World");
+        cout << "compare '" << s3 << "' with '" << s4 << "' returns " << (s3.compare(s4)) << "\n";
+        string s5 = string("hello") + string(" World");
+        cout << "compare '" << s3 << "' with '" << s5 << "' returns " << (s3.compare(s5)) << "\n";
 
 }
 
