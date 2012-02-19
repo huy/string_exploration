@@ -28,9 +28,13 @@ public class StringApi {
         	new String(new StringBuffer(s3).reverse()));
         out.println("9.--- uppercase of '" + s3 + "'+ is '" + s3.toUpperCase() + "'");
         out.println("10.--- lowercase of '" + s3 + "'+ is '" + s3.toLowerCase() + "'");
+
+        String s1 = "hello World";
+        out.println("10.1--- capitalize of '" + s1 + "' is '" + Character.toUpperCase(s1.charAt(0)) + 
+           s1.substring(1,s1.length()) + "'");
+
         String s = "Hello World";
         out.println("11.--- compare '" + s3 + "'+ with '" + s + "' returns " + (s3.equals(s)) );
-        String s1 = "hello World";
         out.println("11.1--- compare '" + s3 + "'+ with '" + s1 + "' returns " + (s1.equals(s)) );
         out.println("12 --- iterate through a string");
         for(char c : s1.toCharArray()) {

@@ -11,6 +11,7 @@ print "8.1---reverse of '"+s + "' is ",''.join(reversed(s))
 print "9.---uppercase of '"+s + "' is ",s.upper()
 s1 = "Hello World"
 print "10.---lowercase of '"+s1 + "' is ",s1.lower()
+print "11.---capitalize of '"+s1 + "' is ",s1.capitalize()
 s2 = "hello world"
 print "11.---compare '"+s + "' with '" + s2 + "' returns ", s==s2
 print "11.1---compare '"+s + "' with '" + s1 + "' returns ", s==s1

@@ -17,9 +17,15 @@ String.prototype.reverse = function() {
 console.log("8.---reverse of '" + s + "' is " + s.reverse());
 console.log("9.---uppercase of '" + s + "' is " + s.toUpperCase());
 console.log("10.---lowercase of '" + s + "' is " + s.toLowerCase());
+
+String.prototype.capitalize = function () {
+    return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
+}
+s2 = "hello World"
+console.log("10.1---capitalize of '" + s2 + "' is " + s2.capitalize());
+
 s1 = "Hello World"
 console.log("11.---compare '" + s + "' with '" + s1 + "' returns " + (s===s1) );
-s2 = "hello World"
 console.log("11.---compare '" + s + "' with '" + s2 + "' returns " + (s===s2) );
 console.log("12.---iterate over each character of string")
 for(i=0;i<s2.length;i+=1){

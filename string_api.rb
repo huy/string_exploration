@@ -18,6 +18,7 @@ puts "7.--- split  #{s} by space =#{s.split(" ").inspect}"
 puts "8.--- reverse of  #{s}=#{s.reverse}"
 puts "9.--- uppercase of  #{s}=#{s.upcase}"
 puts "10.--- lowercase of  #{s}=#{s.downcase}"
+puts "10.1--- capitalize of  #{s}=#{s.capitalize}"
 s1 = 'hello world'
 puts "11.--- compare #{s} with #{s1} returns #{s == s1}"
 s2 = 'hello World'
