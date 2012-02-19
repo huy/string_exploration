@@ -32,5 +32,9 @@ public class StringApi {
         out.println("11.--- compare '" + s3 + "'+ with '" + s + "' returns " + (s3.equals(s)) );
         String s1 = "hello World";
         out.println("11.1--- compare '" + s3 + "'+ with '" + s1 + "' returns " + (s1.equals(s)) );
+        out.println("12 --- iterate through a string");
+        for(char c : s1.toCharArray()) {
+          out.println(c);
+        }
     }
 }

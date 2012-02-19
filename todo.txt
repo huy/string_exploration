@@ -11,7 +11,7 @@
 9 convert to upper case => DONE
 10 convert to lower case => DONE
 11 compare 2 strings => DONE
-12 iterate over each character of a string
+12 iterate over each character of a string => DONE
 13 regular experession
 14 strip \s from start and end
 15 convert number to string

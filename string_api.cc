@@ -60,6 +60,10 @@ int main(int argc,char** argv){
         cout << "11.---compare '" << s3 << "' with '" << s4 << "' returns " << (s3.compare(s4)) << "\n";
         string s5 = string("hello") + string(" World");
         cout << "11.1---compare '" << s3 << "' with '" << s5 << "' returns " << (s3.compare(s5)) << "\n";
-
+	
+        cout << "12. --- interate through a string" << "\n";
+        for(int i=0; i< s2.size(); i+=1){
+            cout << s2[i] << "\n";
+        }
 }
 

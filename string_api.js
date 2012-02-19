@@ -20,4 +20,9 @@ console.log("10.---lowercase of '" + s + "' is " + s.toLowerCase());
 s1 = "Hello World"
 console.log("11.---compare '" + s + "' with '" + s1 + "' returns " + (s===s1) );
 s2 = "hello World"
-console.log("12.---compare '" + s + "' with '" + s2 + "' returns " + (s===s2) );
+console.log("11.---compare '" + s + "' with '" + s2 + "' returns " + (s===s2) );
+console.log("12.---iterate over each character of string")
+for(i=0;i<s2.length;i+=1){
+  console.log(s2.charAt(i))
+}
+
