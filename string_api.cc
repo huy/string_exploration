@@ -36,12 +36,11 @@ int main(int argc,char** argv){
 	cout << "4.1--- last 5 character of '" << s2 << "'=" << s2.substr(s2.size()-5,5) << "\n";
 	cout << "5.--- position of 'world' in '" << s2 << "'=" << int(s2.find("world")) << "\n";
 	cout << "5.1--- position of 'Hello' in '" << s2 << "'=" << int(s2.find(string("Hello"))) << "\n";
-	cout << "6.--- replace 'world' by 'moon' in '" << s2 << "'=" << 
-		s2.replace(s2.find("world"),strlen("world"),"moon") << "\n";
+	cout << "6.--- replace 'world' by 'moon' in '" << s2 << "'=" <<
+		boost::replace_first_copy(s2,"world","moon") << "\n";
 
-	cout << "6.1--- replace 'l' by '?' in '" << s1 << "'=";
-	boost::replace_all(s1,"l","?");
-        cout <<	s1  << "'\n";
+	cout << "6.1--- replace 'l' by '?' in '" << s1 << "'=" <<
+		boost::replace_all_copy(s1,"l","?") << "'\n";
 
 	cout << "7.--- split '" << s2 << "' by space" << "\n";
 	vector<string> lst;
