@@ -31,35 +31,35 @@ int main(int argc,char** argv){
 	s2 = string("hello");
 	s2+=string(" world");
  	cout << s2 << "\n";
-	cout << "--- length of '" << s2 << "'=" << s2.size() << "\n";
-	cout << "--- first 5 character of '" << s2 << "'=" << s2.substr(0,5) << "\n";
-	cout << "--- last 5 character of '" << s2 << "'=" << s2.substr(s2.size()-5,5) << "\n";
-	cout << "--- position of 'world' in '" << s2 << "'=" << s2.find("world") << "\n";
-	cout << "--- position of 'hello' in '" << s2 << "'=" << s2.find(string("hello")) << "\n";
-	cout << "--- replace 'world' by 'moon' in '" << s2 << "'=" << 
+	cout << "3.--- length of '" << s2 << "'=" << s2.size() << "\n";
+	cout << "4.--- first 5 character of '" << s2 << "'=" << s2.substr(0,5) << "\n";
+	cout << "4.1--- last 5 character of '" << s2 << "'=" << s2.substr(s2.size()-5,5) << "\n";
+	cout << "5.--- position of 'world' in '" << s2 << "'=" << int(s2.find("world")) << "\n";
+	cout << "5.1--- position of 'Hello' in '" << s2 << "'=" << int(s2.find(string("Hello"))) << "\n";
+	cout << "6.--- replace 'world' by 'moon' in '" << s2 << "'=" << 
 		s2.replace(s2.find("world"),strlen("world"),"moon") << "\n";
 
-	cout << "--- replace 'l' by '?' in '" << s1 << "'=";
+	cout << "6.1--- replace 'l' by '?' in '" << s1 << "'=";
 	boost::replace_all(s1,"l","?");
         cout <<	s1  << "'\n";
 
-	cout << "--- split '" << s2 << "' by space" << "\n";
+	cout << "7.--- split '" << s2 << "' by space" << "\n";
 	vector<string> lst;
 	boost::split(lst, s2, boost::is_any_of(" "), boost::token_compress_on);
 
 	print_list(lst);
-	cout << "--- reverse of '" << s2 << "'=";
+	cout << "8.--- reverse of '" << s2 << "'=";
 	reverse(s2.begin(),s2.end());
         cout << s2 << "'\n";
 
 	string s3 = "Hello World";
-        cout << "uppercase of '" << s3 << "' is '" << boost::to_upper_copy(s3) << "'\n";
-        cout << "lowercase of '" << s3 << "' is '" << boost::to_lower_copy(s3) << "'\n";
+        cout << "9.---uppercase of '" << s3 << "' is '" << boost::to_upper_copy(s3) << "'\n";
+        cout << "10.---lowercase of '" << s3 << "' is '" << boost::to_lower_copy(s3) << "'\n";
        
         string s4 = string("Hello") + string(" World");
-        cout << "compare '" << s3 << "' with '" << s4 << "' returns " << (s3.compare(s4)) << "\n";
+        cout << "11.---compare '" << s3 << "' with '" << s4 << "' returns " << (s3.compare(s4)) << "\n";
         string s5 = string("hello") + string(" World");
-        cout << "compare '" << s3 << "' with '" << s5 << "' returns " << (s3.compare(s5)) << "\n";
+        cout << "11.1---compare '" << s3 << "' with '" << s5 << "' returns " << (s3.compare(s5)) << "\n";
 
 }
 

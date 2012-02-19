@@ -1,11 +1,12 @@
 s = "Hello" + " World";
-console.log("length of " + s + " is " + s.length);
-console.log("first five characters of  '" + s + "' is '" + s.substring(0,5) + "'");
-console.log("last five characters of  '" + s + "' is '" + s.substring(s.length-5,s.length) + "'");
-console.log("position of  'world' in '" + s + "' is " + s.indexOf("world"));
-console.log("replace 'world' by 'moon' in '" + s + "' is '" + s.replace("world","moon") + "'" );
-console.log("replace all 'l' by '?' in '" + s + "' is '" + s.replace(/l/g,"?") + "'" );
-console.log("split '" + s + "' by space is " + s.split(" "));
+console.log("3.---length of " + s + " is " + s.length);
+console.log("4.---first five characters of  '" + s + "' is '" + s.substring(0,5) + "'");
+console.log("4.1---last five characters of  '" + s + "' is '" + s.substring(s.length-5,s.length) + "'");
+console.log("5.---position of  'world' in '" + s + "' is " + s.indexOf("world"));
+console.log("5.1---position of  'World' in '" + s + "' is " + s.indexOf("World"));
+console.log("6.---replace 'world' by 'moon' in '" + s + "' is '" + s.replace("world","moon") + "'" );
+console.log("6.1---replace all 'l' by '?' in '" + s + "' is '" + s.replace(/l/g,"?") + "'" );
+console.log("7.---split '" + s + "' by space is " + s.split(" "));
 
 String.prototype.reverse = function() {
     var s="";
@@ -13,10 +14,10 @@ String.prototype.reverse = function() {
     return s;
 }
 
-console.log("reverse of '" + s + "' is " + s.reverse());
-console.log("uppercase of '" + s + "' is " + s.toUpperCase());
-console.log("lowercase of '" + s + "' is " + s.toLowerCase());
+console.log("8.---reverse of '" + s + "' is " + s.reverse());
+console.log("9.---uppercase of '" + s + "' is " + s.toUpperCase());
+console.log("10.---lowercase of '" + s + "' is " + s.toLowerCase());
 s1 = "Hello World"
-console.log("compare '" + s + "' with '" + s1 + "' returns " + (s===s1) );
+console.log("11.---compare '" + s + "' with '" + s1 + "' returns " + (s===s1) );
 s2 = "hello World"
-console.log("compare '" + s + "' with '" + s2 + "' returns " + (s===s2) );
+console.log("12.---compare '" + s + "' with '" + s2 + "' returns " + (s===s2) );

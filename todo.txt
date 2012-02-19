@@ -1,14 +1,17 @@
-1 create a string from const ".."
-2 append 2 strings
-3 length of string
-4 create a substring from a string
-5 find a substring return index
-6 replace a substring with other
-7 split string into array of strings
-8 reverse a string
-9 convert to upper case
-10 convert to lower case 
-11 compare 2 strings
-12 regular experession
-13 strip \s from start and end
-14 convert number to string
+1 string literal, create a string from constant=> DONE
+2 append 2 strings => DONE
+3 length of string => DONE
+4 substring from a string => DONE
+5 index of substring => DONE
+6 replace the first instance of a substring with other => DONE
+6.1 replace all instances of a substring with other => DONE
+7 split string into array of substrings =>DONE
+7.1 join array of strings 
+8 reverse a string => DONE
+9 convert to upper case => DONE
+10 convert to lower case => DONE
+11 compare 2 strings => DONE
+12 iterate over each character of a string
+13 regular experession
+14 strip \s from start and end
+15 convert number to string

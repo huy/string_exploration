@@ -1,22 +1,19 @@
 s = 'hello' + ' world'
-print "---length of '"+s+"' is "+str(len(s))
-print "---first 5 characters of '"+s + "' is '" + s[0:5] + "'"
-print "---last 5 characters of '"+s + "' is '" + s[-5:] + "'"
-print "---position of 'world' in '"+s + "' is " + str(s.index("world"))
-print "---replace 'world' by 'moon' in '"+s + "' is " + s.replace("world","moon",1)
-print "---replace all 'l' by '?' in '"+s + "' is " + s.replace("l","?")
-print "---split '"+s + "' by space is ",s.split(" ")
-print "---reverse of '"+s + "' is ",s[::-1]
-print "---uppercase of '"+s + "' is ",s.upper()
+print "3.---length of '"+s+"' is "+str(len(s))
+print "4.---first 5 characters of '"+s + "' is '" + s[0:5] + "'"
+print "4.1---last 5 characters of '"+s + "' is '" + s[-5:] + "'"
+print "5.---position of 'world' in '"+s + "' is " + str(s.index("world"))
+print "6.---replace 'world' by 'moon' in '"+s + "' is " + s.replace("world","moon",1)
+print "6.1---replace all 'l' by '?' in '"+s + "' is " + s.replace("l","?")
+print "7.---split '"+s + "' by space is ",s.split(" ")
+print "8.---reverse of '"+s + "' is ",s[::-1]
+print "9.---uppercase of '"+s + "' is ",s.upper()
 s1 = "Hello World"
-print "---lowercase of '"+s1 + "' is ",s1.lower()
+print "10.---lowercase of '"+s1 + "' is ",s1.lower()
 s2 = "hello world"
-print "---compare '"+s + "' with '" + s2 + "' returns ", s==s2
-print "---compare '"+s + "' with '" + s1 + "' returns ", s==s1
-
-
-
-
-
-
+print "11.---compare '"+s + "' with '" + s2 + "' returns ", s==s2
+print "11.1---compare '"+s + "' with '" + s1 + "' returns ", s==s1
+print "12.--- iterate over each char of '%s'" % s
+for ch in s:
+  print ch
 
