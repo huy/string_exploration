@@ -32,8 +32,8 @@ int main(int argc,char** argv){
 	s2+=string(" world");
  	cout << s2 << "\n";
 	cout << "3.--- length of '" << s2 << "'=" << s2.size() << "\n";
-	cout << "4.--- first 5 character of '" << s2 << "'=" << s2.substr(0,5) << "\n";
-	cout << "4.1--- last 5 character of '" << s2 << "'=" << s2.substr(s2.size()-5,5) << "\n";
+	cout << "4.--b first 5 character of '" << s2 << "'=" << s2.substr(0,5) << "\n";
+	cout << "4.1--b last 5 character of '" << s2 << "'=" << s2.substr(s2.size()-5,5) << "\n";
 	cout << "5.--- position of 'world' in '" << s2 << "'=" << int(s2.find("world")) << "\n";
 	cout << "5.1--- position of 'Hello' in '" << s2 << "'=" << int(s2.find(string("Hello"))) << "\n";
 	cout << "6.--- replace 'world' by 'moon' in '" << s2 << "'=" <<
@@ -55,7 +55,7 @@ int main(int argc,char** argv){
         cout << "9.---uppercase of '" << s3 << "' is '" << boost::to_upper_copy(s3) << "'\n";
         cout << "10.---lowercase of '" << s3 << "' is '" << boost::to_lower_copy(s3) << "'\n";
 	string s0("hello world");
-        cout << "10.1---capitalize of '" << s0 << "' is '" << 
+        cout << "10.1--b capitalize of '" << s0 << "' is '" << 
 		(boost::to_upper_copy(s0.substr(0,1)) + s0.substr(1,s0.size()-1)) << "'\n";
        
         string s4 = string("Hello") + string(" World");

@@ -4,8 +4,8 @@ public class StringApi {
     public static void main(String[] args){
         String s3 = "Hello" + " World";
         out.println("3.--- length of '" + s3 + "' is " + s3.length() );
-        out.println("4.--- first 5 characters of '" + s3 + "' is '" + s3.substring(0,5) + "'" );
-        out.println("4.1--- last 5 characters of '" + s3 + "' is '" + 
+        out.println("4.--b first 5 characters of '" + s3 + "' is '" + s3.substring(0,5) + "'" );
+        out.println("4.1--b last 5 characters of '" + s3 + "' is '" + 
         	s3.substring(s3.length()-5,s3.length())+"'" );
         out.println("5.--- position of 'world' in '" + s3 + "' is " +
         	s3.indexOf("world") );
@@ -30,7 +30,7 @@ public class StringApi {
         out.println("10.--- lowercase of '" + s3 + "'+ is '" + s3.toLowerCase() + "'");
 
         String s1 = "hello World";
-        out.println("10.1--- capitalize of '" + s1 + "' is '" + Character.toUpperCase(s1.charAt(0)) + 
+        out.println("10.1--b capitalize of '" + s1 + "' is '" + Character.toUpperCase(s1.charAt(0)) + 
            s1.substring(1,s1.length()) + "'");
 
         String s = "Hello World";
