@@ -19,11 +19,7 @@ If we want non greedy matched, we need to add non greedy symbol `?`,
 The same example using Python
 
     >>> import re
-    >>> p = re.compile('x.*x')
-    >>> m = p.match('xaxxbx')
-    >>> m.group(0)
-    'xaxxbx'
-    >>> q = re.compile('x.*?x')
-    >>> n = q.match('xaxxbx')
-    >>> n.group(0)
-    'xax'
+    >>> re.findall('x.*?x','xaxxbx')
+    ['xax', 'xbx']
+    >>> re.findall('x.*x','xaxxbx')
+    ['xaxxbx']
